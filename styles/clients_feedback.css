@@ -1,18 +1,32 @@
 .client-feedback-section {
   max-width: 831px;
+  padding: 10rem 0;
+}
+
+.client-feedback-section > div {
+  position: relative;
+  margin: 1.6rem 0 2.4rem 0;
+}
+
+.client-feedback-section > div > img {
+  position: absolute;
+  z-index: -1;
+  top: -15px;
+  left: -20px;
+}
+
+.client-feedback-section > div > p {
+  font-size: 2rem;
+}
+
+.client-feedback-section > p > span {
+  color: #ff3147;
+  font-weight: 700;
+  font-size: 2rem;
 }
 
 .client-feedback-section > p {
-  font-size: 2rem
-}
-
-.client-feedback-section > p:last-of-type > span {
-  color: #ff3147;
-  font-weight: 700;
-  font-size: 2rem
-}
-
-.client-feedback-section > p:last-of-type {
   color: #808080;
   font-weight: 300;
+  font-size: 2rem;
 }

@@ -1,0 +1,48 @@
+.our-project-section {
+  margin-bottom: 10rem;
+}
+
+.project-details {
+  display: flex;
+  gap: 3rem;
+}
+
+.project-img-container {
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.project-img-container > img {
+  width: 100%;
+}
+
+.project-card-container {
+  display: flex;
+  flex-direction: column;
+  max-width: fit-content;
+}
+
+.project-card-container > article {
+  background-color: #f6f6f6;
+  width: 370px;
+  padding: 4rem 3rem;
+  cursor: pointer;
+}
+
+.project-card-container > article.active {
+  background-color: #ff3147;
+  color: #ffffff;
+}
+
+.project-card-container > article > span {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.project-card-container > article > p {
+  font-size: 1.6rem;
+  margin-top: 1.5rem;
+}

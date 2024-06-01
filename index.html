@@ -5,49 +5,227 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fyle assessment</title>
     <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/footer.css" />
-    <link rel="stylesheet" href="styles/clients_feedback.css" />
+    <link rel="stylesheet" href="styles/hero.css" />
+    <link rel="stylesheet" href="styles/what_we_do.css" />
+    <link rel="stylesheet" href="styles/why_choose_us.css" />
+    <link rel="stylesheet" href="styles/our_project.css" />
     <link rel="stylesheet" href="styles/experts_growth.css" />
+    <link rel="stylesheet" href="styles/clients_feedback.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script defer src="/js/script.js"></script>
   </head>
-  <body>
-    <main>
-      
-      What we do
-      <section>
+  <body id="body">
+    <!-- Hero section -->
+    <header class="wrapper">
+      <div class="hero-section">
+        <div class="hero-callout">
+          <h1>Award winning</h1>
+          <h2>Digital Marketing Agency</h2>
+          <p>
+            Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+            Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed
+            lacus nec risus finibus feugiat et fermentum
+          </p>
+          <button onclick="openModal()">CONTACT US</button>
+        </div>
+        <div class="hero-image">
+          <img src="/assets/hero.png" alt="hero_img" />
+        </div>
+      </div>
+    </header>
 
+    <!-- Contact Us form -->
+    <div class="contact-us-form-overlay hidden"></div>
+    <form
+      class="form-modal hidden"
+      action="https://getform.io/f/jawxdkkb"
+      method="POST"
+    >
+      <h5>Talk to us</h5>
+      <div class="input-group">
+        <input type="text" id="email" name="email" placeholder=" " required />
+        <label for="email">Work email</label>
+      </div>
+      <div class="input-name">
+        <div class="input-group">
+          <input
+            type="text"
+            id="firstname"
+            name="firstname"
+            placeholder=" "
+            required
+          />
+          <label for="firstname">First name</label>
+        </div>
+        <div class="input-group">
+          <input
+            type="text"
+            id="lastname"
+            name="lastname"
+            placeholder=" "
+            required
+          />
+          <label for="lastname">Last name</label>
+        </div>
+      </div>
+      <div class="consent-check">
+        <input type="checkbox" id="consent" name="consent" />
+        <label for="consent">
+          I agree to Fyle's terms and conditions, and provide consent to send me
+          communication.
+        </label>
+      </div>
+      <button>Contact Us</button>
+    </form>
+
+    <main>
+      <!-- What we do -->
+      <section class="what-we-do-section">
+        <div class="wrapper">
+          <h3>WHAT WE DO</h3>
+          <div class="services-header">
+            <h4>Services provide for you</h4>
+            <p>
+              Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+              Pellentesque vitae ante at elit fringilla ac at purus, Morbi sed
+              lacus nec risus finibus feugiat et fermentum
+            </p>
+          </div>
+        </div>
+        <div class="wrapper services-carousel-container">
+          <div class="services-carousel">
+            <article>
+              <img src="/assets/services_1.png" alt="service_1" />
+            </article>
+            <article>
+              <img src="/assets/services_2.png" alt="service_2" />
+            </article>
+            <article>
+              <img src="/assets/services_3.png" alt="service_2" />
+              <img src="/assets/web-dev-icon.svg" alt="web-dev-icon" />
+              <span>WEB DEVELOPMENT</span>
+              <p>
+                Morbi sed lacus nec risus finibus feugiat et fermentum nibh.
+                Pellentesque
+              </p>
+              <a href="https://www.fylehq.com/" target="_blank">
+                READ MORE <img src="/assets//read_more-arrow.svg" alt="arrow" />
+              </a>
+            </article>
+            <article>
+              <img src="/assets/services_3.png" alt="service_3" />
+            </article>
+          </div>
+        </div>
+        <div class="wrapper carousel-btn-container">
+          <button class="carousel-btn active"></button>
+          <button class="carousel-btn"></button>
+          <button class="carousel-btn"></button>
+        </div>
       </section>
-      
-      
+
       <!-- Why Choose Us section -->
-      <section></section>
+      <section class="wrapper choose-us-section">
+        <h3>WHY CHOOSE US</h3>
+        <h4>Why We Are Best</h4>
+        <div class="choose-us-card-container">
+          <article>
+            <img src="/assets/choose_us_1.svg" alt="target-icon" />
+            <span>Clarified Vision & Target</span>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy.
+            </p>
+          </article>
+          <article>
+            <img src="/assets/choose_us_2.svg" alt="performance-icon" />
+            <span>High Performance</span>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy.
+            </p>
+          </article>
+          <article>
+            <img src="/assets/choose_us_3.svg" alt="security-icon" />
+            <span>Maintain Security</span>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy.
+            </p>
+          </article>
+          <article>
+            <img src="/assets/choose_us_4.svg" alt="strategy-icon" />
+            <span>Better Strategy & Quality</span>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy.
+            </p>
+          </article>
+        </div>
+      </section>
 
       <!-- Our Project section -->
-      <section></section>
+      <section class="wrapper our-project-section">
+        <h3>Our project</h3>
+        <h4>Why We Are Best</h4>
+        <div class="project-details">
+          <div class="project-img-container">
+            <img
+              id="project-image"
+              src="/assets/project_image_1.png"
+              alt="project_image"
+            />
+          </div>
+          <div class="project-card-container">
+            <article data-img="/assets/project_image_1.png" class="active">
+              <span>Genderless Kei – Japan’s Hot</span>
+              <p>
+                Set to launch on the manufacturer’s new A330neo aircraft in
+                2017, it’s offering lots of
+              </p>
+            </article>
+            <article data-img="/assets/project_image_2.png">
+              <span>Better Strategy & Quality</span>
+              <p>
+                Set to launch on the manufacturer’s new A330neo aircraft in
+                2017, it’s offering lots of
+              </p>
+            </article>
+            <article data-img="/assets/project_image_3.png">
+              <span>Genderless Kei – Japan’s Hot</span>
+              <p>
+                Set to launch on the manufacturer’s new A330neo aircraft in
+                2017, it’s offering lots of
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
 
       <!-- Experts Growth section -->
       <section class="experts-growth-section">
         <div class="wrapper">
-          <h3>Experts growts</h3>
+          <h3>Experts growths</h3>
           <h4>Our Company Growth</h4>
           <div class="stat-cards">
             <article>
-              <img src="/assets/heart.svg" alt="heart" />
+              <img src="/assets/growth_1.svg" alt="heart" />
               <p>199 +</p>
               <span>Statisfied Customers</span>
             </article>
             <article>
-              <img src="/assets/clock.svg" alt="clock" />
+              <img src="/assets/growth_2.svg" alt="clock" />
               <p>1591+</p>
               <span>Days Of Operation</span>
             </article>
             <article>
-              <img src="/assets/check.svg" alt="check" />
+              <img src="/assets/growth_3.svg" alt="check" />
               <p>283 +</p>
               <span>Complete Project</span>
             </article>
             <article>
-              <img src="/assets/prize.svg" alt="prize" />
+              <img src="/assets/growth_4.svg" alt="prize" />
               <p>75+</p>
               <span>Win Awards</span>
             </article>
@@ -59,14 +237,18 @@
       <section class="wrapper client-feedback-section">
         <h3>client's feedback</h3>
         <h4>people say's about us !</h4>
-        <p>
-          Jannat Tumpa The standard chunk of Lorem Ipsum used since the 1500s is
-          reproduced below for those interested. Sections Bonorum et Malorum
-          original.
-        </p>
+        <div>
+          <img src="/assets//feedback_quote.svg" alt="quote-icon" />
+          <p>
+            Jannat Tumpa The standard chunk of Lorem Ipsum used since the 1500s
+            is reproduced below for those interested. Sections Bonorum et
+            Malorum original.
+          </p>
+        </div>
         <p><span>JANNAT TUMPA</span> - COO, AMERIMAR ENTERPRISES, INC.</p>
       </section>
     </main>
+
     <!-- Footer section -->
     <footer>
       <div class="wrapper">

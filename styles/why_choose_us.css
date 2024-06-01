@@ -1,0 +1,28 @@
+.choose-us-section {
+  padding: 10rem 0;
+}
+
+.choose-us-card-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.choose-us-card-container > article {
+  display: flex;
+  flex-direction: column;
+}
+
+.choose-us-card-container > article > img {
+  width: 72px;
+  height: 72px;
+}
+
+.choose-us-card-container > article > span {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 2rem 0 1.5rem 0;
+}
+
+.choose-us-card-container > article > p {
+  font-size: 1.6rem;
+}
