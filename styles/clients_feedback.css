@@ -1,0 +1,18 @@
+.client-feedback-section {
+  max-width: 831px;
+}
+
+.client-feedback-section > p {
+  font-size: 2rem
+}
+
+.client-feedback-section > p:last-of-type > span {
+  color: #ff3147;
+  font-weight: 700;
+  font-size: 2rem
+}
+
+.client-feedback-section > p:last-of-type {
+  color: #808080;
+  font-weight: 300;
+}

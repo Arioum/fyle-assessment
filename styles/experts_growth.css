@@ -1,0 +1,40 @@
+.experts-growth-section {
+  background-color: #fafafa;
+  padding: 10rem 0;
+}
+
+.stat-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stat-cards > article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  background-color: #fff;
+  height: 233px;
+  width: 270px;
+}
+
+.stat-cards > article:hover {
+  cursor: pointer;
+  box-shadow: 3px 6px 20px #672c2c1f;
+}
+
+.stat-cards > article > img {
+  width: 35px;
+  height: 35px;
+}
+
+.stat-cards > article > p {
+  font-size: 6rem;
+  font-weight: 300;
+}
+
+.stat-cards > article > span {
+  font-size: 2rem;
+  font-weight: 300;
+}
