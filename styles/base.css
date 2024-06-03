@@ -2,12 +2,12 @@
 
 @font-face {
   font-family: 'AG-regular';
-  src: url(/fonts/AktivGrotesk-Regular.ttf);
+  src: url(fonts/AktivGrotesk-Regular.ttf);
 }
 
 @font-face {
   font-family: 'AG-bold';
-  src: url(/fonts/AktivGrotesk-Medium.ttf);
+  src: url(fonts/AktivGrotesk-Medium.ttf);
 }
 
 *,
