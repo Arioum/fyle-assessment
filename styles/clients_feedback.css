@@ -1,6 +1,7 @@
 .client-feedback-section {
   max-width: 831px;
-  padding: 10rem 0;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .client-feedback-section > div {
@@ -29,4 +30,24 @@
   color: #808080;
   font-weight: 300;
   font-size: 2rem;
+}
+
+@media (max-width: 1170px) {
+  .client-feedback-section > p {
+    font-size: 1.6rem;
+  }
+
+  .client-feedback-section > div > p {
+    font-size: 1.6rem;
+  }
+
+  .client-feedback-section > p > span {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .client-feedback-section {
+    max-width: 631px;
+  }
 }

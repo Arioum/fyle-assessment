@@ -6,6 +6,7 @@
 .stat-cards {
   display: flex;
   justify-content: space-between;
+  gap: 2em;
 }
 
 .stat-cards > article {
@@ -37,4 +38,61 @@
 .stat-cards > article > span {
   font-size: 2rem;
   font-weight: 300;
+}
+
+/*  */
+@media (max-width: 1170px) {
+  .stat-cards > article {
+    height: 183px;
+    width: 220px;
+  }
+
+  .stat-cards > article > img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .stat-cards > article > p {
+    font-size: 4rem;
+  }
+
+  .stat-cards > article > span {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 978px) {
+  .stat-cards {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    margin: 0 auto;
+    gap: 2rem
+  }
+}
+
+
+@media (max-width: 578px) {
+  .stat-cards {
+    gap: 1rem
+  }
+
+  .stat-cards > article {
+    height: 163px;
+    width: 200px;
+  }
+
+  .stat-cards > article > img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .stat-cards > article > p {
+    font-size: 3.2rem;
+  }
+
+  .stat-cards > article > span {
+    font-size: 1.4rem;
+  }
 }

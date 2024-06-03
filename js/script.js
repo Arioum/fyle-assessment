@@ -1,3 +1,4 @@
+// For form modal
 const modal = document.querySelector('.form-modal');
 const overlay = document.querySelector('.contact-us-form-overlay');
 const body = document.getElementById('body');
@@ -16,6 +17,7 @@ const closeModal = function () {
 
 overlay.addEventListener('click', closeModal);
 
+// For Project card
 document.addEventListener('DOMContentLoaded', () => {
   const articles = document.querySelectorAll(
     '.project-card-container > article'
@@ -33,6 +35,25 @@ document.addEventListener('DOMContentLoaded', () => {
       // Change the image
       const newImgSrc = article.getAttribute('data-img');
       projectImage.src = newImgSrc;
+    });
+  });
+});
+
+// For carousel
+document.addEventListener('DOMContentLoaded', () => {
+  const carousel = document.querySelector('.services-carousel');
+  const buttons = document.querySelectorAll('.carousel-btn');
+
+  let currentIndex = 0;
+
+  buttons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+      carousel.style.transform = `translateX(-${index * 400}px)`;
+
+      buttons[currentIndex].classList.remove('active');
+      button.classList.add('active');
+
+      currentIndex = index;
     });
   });
 });

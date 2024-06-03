@@ -36,6 +36,7 @@
   position: absolute;
   display: flex;
   gap: 3rem;
+  transition: transform 0.5s ease;
 }
 
 .services-carousel > article {
@@ -45,26 +46,35 @@
   overflow: hidden;
 }
 
-.services-carousel > article:nth-child(3) {
+.services-carousel > article:hover {
+  cursor: pointer;
+}
+
+.services-carousel > article:hover > img {
+  display: none;
+}
+
+.services-carousel > article > div {
   background-color: #ff3147;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #fff;
+  height: 100%;
 }
 
-.services-carousel > article:nth-child(3) > img {
+.services-carousel > article > div > img {
   width: 55px;
   width: 55px;
 }
 
-.services-carousel > article:nth-child(3) > span {
+.services-carousel > article > div > span {
   font-size: 2.4rem;
   margin: 36px 0 21px 0;
 }
 
-.services-carousel > article:nth-child(3) > p {
+.services-carousel > article > div > p {
   font-size: 1.6rem;
   text-align: center;
   font-weight: 300;
@@ -72,7 +82,7 @@
   margin-bottom: 54px;
 }
 
-.services-carousel > article:nth-child(3) > a {
+.services-carousel > article > div > a {
   width: 185px;
   height: 50px;
   font-size: 1.4rem;
@@ -88,6 +98,7 @@
   border: none;
 }
 
+/* Carousel btns (dots) */
 .carousel-btn-container {
   margin-top: 50px;
   margin-bottom: 13px;
@@ -101,11 +112,12 @@
   border: none;
   background-color: #000;
   border-radius: 50em;
+  transition: background-color 1s, outline 1s;
 }
 
 .carousel-btn.active {
   background-color: #ff3147;
-  outline: auto 1px #ff3147;
+  outline: 2px solid #ff3147;
   outline-offset: 12px;
   margin-left: 1.3rem;
   margin-right: 1.3rem;

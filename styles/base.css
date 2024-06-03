@@ -25,8 +25,9 @@ body {
 }
 
 .wrapper {
-  max-width: 1170px;
+  max-width: 1210px;
   margin: 0 auto;
+  padding: 0 2rem;
 }
 
 h3 {
@@ -54,9 +55,29 @@ button:hover {
 }
 
 @media (max-width: 1170px) {
-  *,
-  *::after,
-  *::before {
-    font-size: 50%;
+  h3 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+  }
+
+  h4 {
+    font-size: 3.2rem;
+    line-height: 1.2;
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 769px) {
+  h3 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+  }
+
+  h4 {
+    font-size: 3.2rem;
+    line-height: 1.2;
+    margin-bottom: 4rem;
   }
 }
